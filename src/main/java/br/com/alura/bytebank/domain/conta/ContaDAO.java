@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ContaDAO {
-        private Connection conn;
+    private final Connection conn;
 
     ContaDAO(Connection connection){
         this.conn = connection;
@@ -158,12 +158,6 @@ public class ContaDAO {
             throw new RuntimeException(e);
         }
     }
-
-
-    public void teste() {
-        System.out.println("teste");
-    }
-
 
     public void alterarLogico(Integer numeroDaConta){
         PreparedStatement ps;
