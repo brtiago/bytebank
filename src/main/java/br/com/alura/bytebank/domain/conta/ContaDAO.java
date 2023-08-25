@@ -160,6 +160,10 @@ public class ContaDAO {
     }
 
 
+    public void teste() {
+        System.out.println("teste");
+    }
+
 
     public void alterarLogico(Integer numeroDaConta){
         PreparedStatement ps;
