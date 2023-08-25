@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ContaDAO {
-        private Connection conn;
+    private final Connection conn;
 
     ContaDAO(Connection connection){
         this.conn = connection;
